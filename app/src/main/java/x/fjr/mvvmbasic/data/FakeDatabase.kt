@@ -10,7 +10,6 @@ class FakeDatabase private constructor(){
 
         fun getInstance() = instance ?: synchronized(this) {
             instance ?: FakeDatabase().also { instance = it }
-            VIew
         }
     }
 
